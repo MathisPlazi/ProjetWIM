@@ -1,0 +1,139 @@
+body{   
+  background-color:  rgba(226, 207, 99, 0.39); 
+}
+#menu {
+	float: right;
+  margin-right: 10%;
+  
+  
+}
+#menu a { 
+	display:block; 
+	color: #fff; 
+	text-decoration:none;
+}
+#menu > li,
+#menu > li li {
+	position: relative;
+	display:inline-block;
+	width: 110px;
+	padding: 6px 15px;
+	background-color: #777;
+	background-image: linear-gradient(rgb(196, 64, 64), rgb(39, 39, 39) 50%, rgb(206, 206, 206) 50%,#999);
+}
+#menu > li li { background: transparent none; }
+#menu > li li a { color: #444; }
+#menu > li li:hover { background:#eee; }
+#menu > li:first-child {
+	border-right: 1px solid #777;
+	border-radius: 8px 0 0 8px;
+}
+#menu > li + li {
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #777;
+}
+#menu > li:last-child {
+	border-right: 0;
+	border-left: 1px solid #aaa;
+	border-radius: 0 8px 8px 0 ;
+}
+#menu > li:hover {
+	background-color: #999;
+	background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);
+}
+
+#menu ul {
+	position: absolute;
+	top: 2em; left: 0;
+	max-height:0em;	
+	margin: 0; padding: 0;
+	background-color: #ddd;
+	background-image: linear-gradient(#fff,#ddd);
+	overflow: hidden;
+	transition: 1s max-height 0.3s;
+	border-radius: 0 0 8px 8px;
+}
+
+#menu > li:hover ul {
+	
+	max-height: 60em;
+}
+div.disp{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+     border-width: 10%;
+     border-style: solid;
+     border-color:rgb(255, 255, 255);    
+}
+div.waramer{
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #d87f7f;
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    margin-top: 10%;
+
+}
+form {
+    margin: auto;
+    width: 70%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input, textarea {
+    font: 1em sans-serif;
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea { 
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .button {
+    padding-left: 90px; 
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  .presentation {
+    margin: .5rem;
+    padding: .3rem;
+	font-size: 1.2rem;
+	background:  white;
+}
+
+.presentation > h2,
+.presentation > p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+.marchestp{
+  margin: 0;
+  padding: .3rem;
+  background-color: rgb(252, 211, 141);
+	font: 1rem 'Fira Sans', sans-serif;
+	margin-right: 20%;
+	margin-left: 30%;
+	border-radius: 10px;
+}
